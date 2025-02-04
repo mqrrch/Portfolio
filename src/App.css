@@ -1,0 +1,61 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    user-select: none;
+}
+
+/* background: linear-gradient(#74c476, #005a32);  */
+/* Mid: #3a8f54 */
+
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #10061f;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #10061f;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #10061f;
+}
+
+.hp-title{
+    font-size: 2.4rem;
+}
+.hp-subtitle{
+    font-size: 1.1rem;
+}
+
+.about-text{
+    font-size: .95rem;
+}
+
+@media only screen and (min-width: 425px){
+    .project-card{
+        display: flex;
+        gap: 10px;
+    }
+
+    .project-card-img-wrapper{
+        max-width: 180px;
+    }
+
+    .project-card-text{
+        margin: 0;
+    }
+}
