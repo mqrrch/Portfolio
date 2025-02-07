@@ -9,6 +9,7 @@ body{
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     user-select: none;
+    scroll-behavior: smooth;
 }
 
 /* width */
@@ -31,27 +32,42 @@ body{
     background: #10061f;
 }
 
-@media only screen and (min-width: 1440px){
-    #contact-popup{
-        max-width: 500px;
-    }
+.nav-link{
+    font-size: clamp(1.1rem, 0.686rem + 2.071vw, 4rem);
+}
 
-    #contact-popup i{
-        font-size: 1.4rem;
-    }
+.hp-title{
+    font-size: clamp(1.8rem, 1.2rem + 3vw, 6rem);
+}
+.hp-name{
+    font-size: clamp(3rem, 2.143rem + 4.286vw, 9rem);
+}
+.hp-subtitle{
+    font-size: clamp(0.9rem, 0.714rem + 0.929vw, 2.2rem);
+}
+.hp-button{
+    font-size: clamp(0.9rem, 0.714rem + 0.929vw, 2.2rem);
+}
 
-    .contact-popup-title{
-        font-size: 2rem;
-        margin-top: .8rem;
-    }
+.projects-page-title {
+    font-size: clamp(1.5rem, 1.314rem + 0.929vw, 2.8rem);
+}
+.project-title {
+    font-size: clamp(1.2rem, 0.9rem + 1vw, 2rem);
+}
+.project-links {
+    font-size: clamp(1rem, 0.8rem + 0.8vw, 1.8rem);
+}
+.project-desc {
+    font-size: clamp(0.8rem, 0.686rem + 0.571vw, 1.6rem);
+}
+.project-tag-text {
+    font-size: clamp(0.8rem, 0.743rem + 0.286vw, 1.2rem);
+}
 
-    .contact-popup-form{
-        gap: 16px;
-    }
-
-    .contact-popup-form label,
-    .contact-popup-form input,
-    .contact-popup-form button{
-        font-size: 1.4rem;
+@media (min-width: 1920px){
+    #homepage,
+    #projects{
+        max-width: 1760px;
     }
 }

@@ -9,7 +9,7 @@ export default function Projects(){
             img: gemsCloneImage,
             alt: 'Gems Clone Image',
             name: 'Gems Clone',
-            text: 'A landing page clone of Gems website.',
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?',
             tools: ['HTML', 'CSS', 'Javascript', 'Tailwind', 'React'],
             webLink: 'https://mqrrch.github.io/Gems-Clone/',
             ghLink: 'https://github.com/mqrrch/Gems-Clone'
@@ -18,7 +18,7 @@ export default function Projects(){
             img: weatherAppImage,
             alt:'Weather App Image',
             name: 'Weather App',
-            text: 'Weather app type shit.',
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?',
             tools: ['HTML', 'CSS', 'Javascript', 'Tailwind', 'React'],
             webLink: 'https://mqrrch.github.io/Weather-App/',
             ghLink: 'https://github.com/mqrrch/Weather-App'
@@ -27,7 +27,7 @@ export default function Projects(){
             img: toDoListImage,
             alt:'To Do List Image',
             name: 'To Do List',
-            text: 'Do your to do list wow.',
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?',
             tools: ['HTML', 'CSS', 'Javascript', 'Tailwind', 'React'],
             webLink: 'https://mqrrch.github.io/To-Do-List/',
             ghLink: 'https://github.com/mqrrch/To-Do-List'
@@ -36,7 +36,7 @@ export default function Projects(){
             img: quizImage,
             alt:'Quiz Image',
             name: 'Quiz',
-            text: 'Quiz wow very cool wow.',
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?',
             tools: ['HTML', 'CSS', 'Javascript', 'Tailwind', 'React'],
             webLink: 'https://mqrrch.github.io/Quiz/',
             ghLink: 'https://github.com/mqrrch/Quiz'
@@ -44,18 +44,18 @@ export default function Projects(){
     ]
 
     return(
-        <div id="projects" className="text-white max-w-[640px] lg:max-w-[900px] xl:max-w-[1100px] mx-auto mt-10">
-            <h3 className="projects-page-title text-2xl font-bold mb-6">My Projects</h3>
-            <div className="project-list grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div id="projects" className="text-white max-w-[640px] lg:max-w-[800px] xl:max-w-[1000px] 2xl:max-w-[1400px] mx-auto mt-24">
+            <h3 className="projects-page-title font-[500] mb-6">My Projects</h3>
+            <div className="project-list grid grid-cols-1 sm:grid-cols-2 2xl:gap-x-20 gap-6">
                 {projects.map((item, index) => (
-                    <div className="project-card bg-[rgba(0,0,0,0.5)] p-4 rounded-xl shadow-lg transition transform hover:scale-105 hover:shadow-2xl" key={index}>
-                        <div className="project-card-img-wrapper h-48 xl:h-80 w-full overflow-hidden rounded-lg">
+                    <div className="project-card bg-[rgba(0,0,0,0.5)] p-4 2xl:p-6 rounded-xl shadow-lg transition transform hover:scale-105 hover:shadow-2xl" key={index}>
+                        <div className="project-card-img-wrapper h-48 xl:h-[14rem] 2xl:h-[20rem] overflow-hidden rounded-lg">
                             <img src={item.img} alt={item.alt} className="w-full h-full object-cover object-top" />
                         </div>
-                        <div className="project-card-text-wrapper mt-2">
+                        <div className="project-card-text-wrapper mt-2 xl:mt-4">
                             <div className="flex items-center justify-between">
-                                <p className="project-title text-lg font-semibold">{item.name}</p>
-                                <div className="space-x-3 text-lg">
+                                <p className="project-title text-lg font-[400]">{item.name}</p>
+                                <div className="project-links space-x-3 xl:space-x-5 2xl:space-x-7">
                                     <a href={item.webLink} target="_blank" rel="noopener noreferrer" title="View Project" className="hover:text-[#975bac] transition-colors">
                                         <i className="fa-solid fa-globe"></i>
                                     </a>
@@ -64,11 +64,11 @@ export default function Projects(){
                                     </a>
                                 </div>
                             </div>
-                            <p className="project-desc text-sm mt-2">{item.text}</p>
-                            <div className="project-card-tags flex gap-2 mt-4 flex-wrap">
+                            <p className="project-desc text-sm mt-2 leading-tight">{item.text}</p>
+                            <div className="project-card-tags flex gap-2 2xl:gap-3 mt-8 flex-wrap">
                                 {item.tools.map((tool, idx) => (
-                                    <div key={idx} className="project-tag py-1 px-2 bg-neutral-900 rounded hover:scale-105 transition-transform">
-                                        <p className="text-sm text-[#975bac] font-bold">{tool}</p>
+                                    <div key={idx} className="project-tag-container py-[2px] px-2 xl:py-[6px] xl:px-[8px] 2xl:py-[12px] 2xl:px-[10px] bg-neutral-900 rounded hover:scale-110 transition-transform">
+                                        <p className="project-tag-text text-sm text-[#975bac] font-bold">{tool}</p>
                                     </div>
                                 ))}
                             </div>
