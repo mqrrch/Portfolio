@@ -30,7 +30,7 @@ export default function Contact(){
     return(
         <div id="contact" className="my-20 mb-6 flex flex-col text-white">
             <h3 className="text-2xl md:text-3xl">Contact me!</h3>
-            <p>Drop me a mail at marchellinusolliver1706@gmail.com or you can just send me one idk</p>
+            <p>Feel free to drop a message!</p>
             <form onSubmit={handleSubmit} className="flex flex-col mt-5 gap-3 md:text-xl">
                 <div className="flex flex-col">
                     <label htmlFor="name">Name</label>
