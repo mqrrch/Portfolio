@@ -49,9 +49,11 @@ export default function Projects(){
             <div className="project-list grid grid-cols-1 sm:grid-cols-2 2xl:gap-x-20 gap-6">
                 {projects.map((item, index) => (
                     <div className="project-card bg-[rgba(0,0,0,0.5)] p-4 2xl:p-6 rounded-xl shadow-lg transition transform hover:scale-105 hover:shadow-2xl" key={index}>
-                        <div className="project-card-img-wrapper h-48 xl:h-[14rem] 2xl:h-[20rem] overflow-hidden rounded-lg">
-                            <img src={item.img} alt={item.alt} className="w-full h-full object-cover object-top" />
-                        </div>
+                        <a href={item.webLink} target="_blank">
+                            <div className="project-card-img-wrapper h-48 xl:h-[14rem] 2xl:h-[20rem] overflow-hidden rounded-lg">
+                                <img src={item.img} alt={item.alt} className="w-full h-full object-cover object-top" />
+                            </div>
+                        </a>
                         <div className="project-card-text-wrapper mt-2 xl:mt-4">
                             <div className="flex items-center justify-between">
                                 <p className="project-title text-lg font-[400]">{item.name}</p>
