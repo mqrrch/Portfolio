@@ -58,10 +58,10 @@ export default function Projects(){
                             <div className="flex items-center justify-between">
                                 <p className="project-title text-lg font-[400]">{item.name}</p>
                                 <div className="project-links space-x-3 xl:space-x-5 2xl:space-x-7">
-                                    <a href={item.webLink} target="_blank" rel="noopener noreferrer" title="View Project" className="hover:text-[#975bac] transition-colors">
+                                    <a href={item.webLink} target="_blank" rel="noopener noreferrer" title="View Project" className="inline-block hover:text-[#975bac] hover:scale-125 transition-all">
                                         <i className="fa-solid fa-globe"></i>
                                     </a>
-                                    <a href={item.ghLink} target="_blank" rel="noopener noreferrer" title="View Repository" className="hover:text-[#975bac] transition-colors">
+                                    <a href={item.ghLink} target="_blank" rel="noopener noreferrer" title="View Repository" className="inline-block hover:text-[#975bac] hover:scale-125 transition-all">
                                         <i className="fa-brands fa-github"></i>
                                     </a>
                                 </div>
@@ -69,8 +69,8 @@ export default function Projects(){
                             <p className="project-desc text-sm mt-2 leading-tight">{item.text}</p>
                             <div className="project-card-tags flex gap-2 2xl:gap-3 mt-8 flex-wrap">
                                 {item.tools.map((tool, idx) => (
-                                    <div key={idx} className="project-tag-container py-[2px] px-2 xl:py-[6px] xl:px-[8px] 2xl:py-[12px] 2xl:px-[10px] bg-neutral-900 rounded hover:scale-110 transition-transform">
-                                        <p className="project-tag-text text-sm text-[#975bac] font-bold">{tool}</p>
+                                    <div key={idx} className="project-tag-container group py-[2px] px-2 xl:py-[6px] xl:px-[8px] 2xl:py-[12px] 2xl:px-[10px] bg-neutral-900 rounded hover:scale-110 transition-transform">
+                                        <p className="project-tag-text text-sm text-[#975bac] group-hover:text-[#c492d6] transition-colors font-bold">{tool}</p>
                                     </div>
                                 ))}
                             </div>

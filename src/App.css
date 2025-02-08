@@ -65,9 +65,42 @@ body{
     font-size: clamp(0.8rem, 0.743rem + 0.286vw, 1.2rem);
 }
 
+#contact h3{
+    font-size: clamp(1.5rem, 1.314rem + 0.929vw, 2.8rem);
+}
+
+#contact p{
+    font-size: clamp(0.8rem, 0.657rem + 0.714vw, 1.8rem);
+}
+
+#contact-form div{
+    font-size: clamp(0.9rem, 0.771rem + 0.643vw, 1.8rem);
+}
+
+#contact-form button{
+    font-size: clamp(0.9rem, 0.771rem + 0.643vw, 1.8rem);
+}
+
+#alert-popup p{
+    font-size: clamp(0.8rem, 0.629rem + 0.857vw, 2rem);
+}
+
 @media (min-width: 1920px){
     #homepage,
     #projects{
         max-width: 1760px;
     }
+}
+
+@keyframes shrinkTimer {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0;
+    }
+}
+
+.timer-animation{
+    animation: shrinkTimer 4s linear forwards;
 }

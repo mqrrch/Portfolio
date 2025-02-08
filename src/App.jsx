@@ -14,6 +14,7 @@ function App() {
       <Navbar />
       <div className='px-5 py-10'>
         <Homepage />
+        <div className=''></div>
         {/* <About /> */}
         <Projects />
         <Contact />

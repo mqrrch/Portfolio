@@ -5,7 +5,7 @@ export default function Navbar(){
                 <a className="nav-link">
                     <i className="fa-brands fa-linkedin nav-brands"></i>
                 </a>
-                <a className="nav-link">
+                <a className="nav-link hover:text-[#975bac] transition-colors" href="https://github.com/mqrrch" target="_blank">
                     <i className="fa-brands fa-square-github nav-brands"></i>
                 </a>
             </div>
