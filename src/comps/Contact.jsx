@@ -39,17 +39,17 @@ export default function Contact(){
                     <div className="flex flex-col lg:gap-1 xl:gap-[6px]">
                         <label htmlFor="name">Name</label>
                         <input type="text" name="name" id="name" autoComplete="off" 
-                        className="pl-1 border-2 border-[#975bac] bg-[rgba(0,0,0,0.05)] rounded" required />
+                        className="pl-1 border-2 border-[#975bac] bg-[rgba(0,0,0,0.05)] rounded outline-none" required />
                     </div>
 
                     <div className="flex flex-col lg:gap-1 xl:gap-[6px]">
                         <label htmlFor="email">Email</label>
-                        <input type="email" name="email" id="email" autoComplete="off" className="pl-1 border-2 border-[#975bac] bg-[rgba(0,0,0,0.05)] rounded" required />
+                        <input type="email" name="email" id="email" autoComplete="off" className="pl-1 border-2 border-[#975bac] bg-[rgba(0,0,0,0.05)] rounded outline-none" required />
                     </div>
 
                     <div className="flex flex-col lg:gap-1 xl:gap-[6px]">
                         <label htmlFor="message" className="">Message</label>
-                        <textarea name="message" id="message" className="pl-1 resize-none border-2 border-[#975bac] bg-[rgba(0,0,0,0.05)] rounded" rows={6} required></textarea>
+                        <textarea name="message" id="message" className="pl-1 resize-none border-2 border-[#975bac] bg-[rgba(0,0,0,0.05)] rounded outline-none" rows={6} required></textarea>
                     </div>
 
                     <button type="submit" className="p-1 border-2 border-[#975bac] rounded hover:bg-[#975bac] transition-colors">Send</button>
