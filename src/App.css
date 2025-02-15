@@ -34,63 +34,57 @@ body{
 }
 
 .nav-link{
-    font-size: clamp(1.1rem, 0.686rem + 2.071vw, 4rem);
+    font-size: clamp(1.625rem, 1.219rem + 2.031vw, 3.25rem);
 }
 
 .hp-title{
-    font-size: clamp(1.8rem, 1.2rem + 3vw, 6rem);
+    font-size: clamp(1.75rem, 1.188rem + 2.813vw, 4rem);
 }
 .hp-name{
-    font-size: clamp(3rem, 2.143rem + 4.286vw, 9rem);
+    font-size: clamp(3.75rem, 2.5rem + 6.25vw, 8.75rem);
 }
 .hp-subtitle{
-    font-size: clamp(0.9rem, 0.714rem + 0.929vw, 2.2rem);
+    font-size: clamp(0.875rem, 0.625rem + 1.25vw, 1.875rem);
 }
 .hp-button{
-    font-size: clamp(0.9rem, 0.714rem + 0.929vw, 2.2rem);
+    font-size: clamp(0.875rem, 0.531rem + 1.719vw, 2.25rem);
 }
 
 .projects-page-title {
-    font-size: clamp(1.5rem, 1.314rem + 0.929vw, 2.8rem);
+    font-size: clamp(1.75rem, 1.281rem + 2.344vw, 3.625rem);
 }
 .project-title {
-    font-size: clamp(1.2rem, 0.9rem + 1vw, 2rem);
+    font-size: clamp(1.25rem, 1.031rem + 1.094vw, 2.125rem);
 }
 .project-links {
-    font-size: clamp(1rem, 0.8rem + 0.8vw, 1.8rem);
+    font-size: clamp(1.125rem, 0.906rem + 1.094vw, 2rem);
 }
 .project-desc {
-    font-size: clamp(0.8rem, 0.686rem + 0.571vw, 1.6rem);
+    font-size: clamp(0.75rem, 0.5rem + 1.25vw, 1.75rem);
 }
 .project-tag-text {
-    font-size: clamp(0.8rem, 0.743rem + 0.286vw, 1.2rem);
+    font-size: clamp(0.75rem, 0.563rem + 0.938vw, 1.5rem);
 }
 
 #contact h3{
-    font-size: clamp(1.5rem, 1.314rem + 0.929vw, 2.8rem);
+    font-size: clamp(1.5rem, 1.063rem + 2.188vw, 3.25rem);
 }
-
 #contact p{
-    font-size: clamp(0.8rem, 0.657rem + 0.714vw, 1.8rem);
+    font-size: clamp(0.813rem, 0.578rem + 1.172vw, 1.75rem);
 }
-
-#contact-form div{
-    font-size: clamp(0.9rem, 0.771rem + 0.643vw, 1.8rem);
+#contact-form div label{
+    font-size: clamp(1rem, 0.75rem + 1.25vw, 2rem);
 }
-
+#contact-form div input,
+#contact-form div textarea{
+    font-size: clamp(0.875rem, 0.656rem + 1.094vw, 1.75rem);
+}
 #contact-form button{
-    font-size: clamp(0.9rem, 0.771rem + 0.643vw, 1.8rem);
+    font-size: clamp(1rem, 0.813rem + 0.938vw, 1.75rem);
 }
 
 #alert-popup p{
-    font-size: clamp(0.8rem, 0.629rem + 0.857vw, 2rem);
-}
-
-@media (min-width: 1920px){
-    #homepage,
-    #projects{
-        max-width: 1760px;
-    }
+    font-size: clamp(0.813rem, 0.609rem + 1.016vw, 1.625rem);
 }
 
 @keyframes shrinkTimer {

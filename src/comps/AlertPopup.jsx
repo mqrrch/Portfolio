@@ -32,7 +32,7 @@ export default function AlertPopup({ initialTime, setInitialTime, result }){
                     <>
                         <div id="timer" ref={timerRef} className="absolute left-0 top-0 bg-blue-500 h-1 timer-animation"></div>
                         <div className="mt-1 text-white">
-                            <p>Message has been sent!<br></br>I will look into it as soon as possible!</p>
+                            <p>Message has been sent!</p>
                         </div>
                     </>
                 )}
@@ -50,7 +50,7 @@ export default function AlertPopup({ initialTime, setInitialTime, result }){
                     <>
                         <div id="timer" ref={timerRef} className="absolute left-0 top-0 bg-blue-500 h-1"></div>
                         <div className="mt-1 text-white">
-                            <p>Message has been sent!<br></br>I will look into it as soon as possible!</p>
+                            <p>Message has been sent!</p>
                         </div>
                     </>
                 )}

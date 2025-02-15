@@ -32,10 +32,10 @@ export default function Contact(){
     return(
         <>
             <AlertPopup initialTime={initialTime} setInitialTime={setInitialTime} result={result} />
-            <div id="contact" className="mt-32 pt-4 flex flex-col text-white max-w-[640px] lg:max-w-[800px] mx-auto">
+            <div id="contact" className="mt-32 pt-4 flex flex-col text-white lg:max-w-[800px]  mx-auto">
                 <h3 className="text-2xl md:text-3xl text-center font-[500]">Contact me!</h3>
-                <p className="text-sm mt-2 lg:mt-3 2xl:mt-4 text-center">Email: marchel.010706@gmail.com</p>
-                <form onSubmit={handleSubmit} id="contact-form" className="flex flex-col mt-2 space-y-[1.15rem]">
+                <p className="text-sm mt-1 md:mt-3 lg:mt-5 xl:mt-7 2xl:mt-9 text-center">Email: marchel.010706@gmail.com</p>
+                <form onSubmit={handleSubmit} id="contact-form" className="flex flex-col mt-2 md:mt-4 lg:mt-6 xl:mt-8 2xl:mt-10 space-y-[1.15rem]">
                     <div className="flex flex-col lg:gap-1 xl:gap-[6px]">
                         <label htmlFor="name">Name</label>
                         <input type="text" name="name" id="name" autoComplete="off" 

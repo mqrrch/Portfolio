@@ -10,7 +10,7 @@ export default function Projects(){
             alt: 'Gems Clone Image',
             name: 'Gems Clone',
             text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?',
-            tools: ['HTML', 'CSS', 'Javascript', 'Tailwind', 'React'],
+            tools: ['Javascript', 'Tailwind', 'React'],
             webLink: 'https://mqrrch.github.io/Gems-Clone/',
             ghLink: 'https://github.com/mqrrch/Gems-Clone'
         },
@@ -19,7 +19,7 @@ export default function Projects(){
             alt:'Weather App Image',
             name: 'Weather App',
             text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?',
-            tools: ['HTML', 'CSS', 'Javascript', 'Tailwind', 'React'],
+            tools: ['Javascript', 'Tailwind', 'React'],
             webLink: 'https://mqrrch.github.io/Weather-App/',
             ghLink: 'https://github.com/mqrrch/Weather-App'
         },
@@ -28,7 +28,7 @@ export default function Projects(){
             alt:'To Do List Image',
             name: 'To Do List',
             text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?',
-            tools: ['HTML', 'CSS', 'Javascript', 'Tailwind', 'React'],
+            tools: ['Javascript', 'Tailwind', 'React', 'Firebase', 'Redux'],
             webLink: 'https://mqrrch.github.io/To-Do-List/',
             ghLink: 'https://github.com/mqrrch/To-Do-List'
         },
@@ -37,14 +37,14 @@ export default function Projects(){
             alt:'Quiz Image',
             name: 'Quiz',
             text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?',
-            tools: ['HTML', 'CSS', 'Javascript', 'Tailwind', 'React'],
+            tools: ['Javascript', 'Tailwind', 'React'],
             webLink: 'https://mqrrch.github.io/Quiz/',
             ghLink: 'https://github.com/mqrrch/Quiz'
         },
     ]
 
     return(
-        <div id="projects" className="text-white max-w-[640px] lg:max-w-[800px] xl:max-w-[1000px] 2xl:max-w-[1400px] mx-auto mt-24">
+        <div id="projects" className="text-white mt-24">
             <h3 className="projects-page-title font-[500] mb-6">My Projects</h3>
             <div className="project-list grid grid-cols-1 sm:grid-cols-2 2xl:gap-x-20 gap-6">
                 {projects.map((item, index) => (
@@ -56,7 +56,7 @@ export default function Projects(){
                         </a>
                         <div className="project-card-text-wrapper mt-2 xl:mt-4">
                             <div className="flex items-center justify-between">
-                                <p className="project-title text-lg font-[400]">{item.name}</p>
+                                <a href={item.webLink} target="_blank" className="project-title text-lg font-[400] hover:underline hover:cursor-pointer">{item.name}</a>
                                 <div className="project-links space-x-3 xl:space-x-5 2xl:space-x-7">
                                     <a href={item.webLink} target="_blank" rel="noopener noreferrer" title="View Project" className="inline-block hover:text-[#975bac] hover:scale-125 transition-all">
                                         <i className="fa-solid fa-globe"></i>

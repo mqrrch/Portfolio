@@ -12,7 +12,7 @@ function App() {
         <div className='absolute top-0 z-[-2] h-screen w-screen bg-[#10061f] bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(70,33,103,0.5),rgba(255,255,255,0))]'></div>
       </div>
       <Navbar />
-      <div className='px-5 py-10'>
+      <div className='px-5 py-10 max-w-[640px] lg:max-w-[800px] xl:max-w-[1000px] 2xl:max-w-[1400px] mx-auto'>
         <Homepage />
         <div className=''></div>
         {/* <About /> */}
